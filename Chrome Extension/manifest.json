@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube Mini",
+    "description": "Miniature Youtube Chrome Extension",
+    "version": "1.0.0",
+    "icons": {"128": "Youtube_Mini_128.png"},
+    "browser_action": {
+        "default_icon": "Youtube_Mini_19.png",
+        "default_popup": "popup.html" 
+    },
+    "permissions": ["activeTab"]
+}

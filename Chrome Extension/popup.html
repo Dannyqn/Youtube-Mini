@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Youtube Mini</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial" type="text/css">
+    <style>
+        html, body{
+            font-family:'Arial', serif;
+            font-size:12px;
+            margin: 0;
+            min-height: 190px;
+            padding: 0;
+            width: 384px;
+            color: #000;
+            text-shadow: 2px 2px 2px #aaa;
+        }
+        h1{
+            font-family:'Menlo' monospace;
+            font-size: 22px;
+            font-weight: 400;
+            margin: 0;
+            color:#000;
+        }
+        a:link, a:visited {
+            columns: #000000;
+            outline: 0;
+            text-decoration: none; 
+        }
+        img{
+            width: 30px;
+        }
+        .modal-header{
+            align-items: center;
+            border-bottom: 0.5px solid #dadada;
+        }
+        .modal-content{
+            font-size: 15px;
+            padding: 0 22px;
+        }
+        .modal-icons{
+            border-top: 0.5px solid #dadada;
+            height: 50px;
+            width: 100%;
+        }
+        .logo{
+            padding: 16px;
+        }
+        .logo-icon{
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+        .version{
+            color : #444;
+            font-size: 18px;
+        }
+        .flex-container{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 22px;
+        }
+        .flex{
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+            width: 20px;
+        }
+        .flex:hover{
+            opacity: 0.4;
+        }
+        .flex .fa{
+            font-size: 40px;
+            color: #ff0000;
+        }
+    </style>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class = "modal-header">
+        <h1 class="logo">
+            <img src="YouTube_Mini_128.png" alt="Random Video Player" class="logo_icon">
+            Youtube Mini <span class="version"> (1.0.0)</span>
+        </h1>
+    </div>
+    <div class = "modal-content">
+        <p>
+            <form action="http://www.youtube.com/results" method="get" target="_blank" >
+                <input name="search_query" type="text" maxlength="128" />
+                <select name="search_type">
+                <option value="">Videos</option>
+                <option value="search_users">Channels</option>
+                </select>
+                <input type="submit" value="Search" />
+            </form>
+            <iframe width= "210" height="160"
+            src = "https://www.youtube.com/embed/6n3pFFPSlW4">
+            </iframe>
+            Enjoy your video!
+        </p>
+    </div>
+    <div class = "modal-icons">
+        <div class = "flex-container">
+            <div class = "flex">
+                <a href = "https://github.com/Dannyqn" target = "blank">
+                    <i class = "fa fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
